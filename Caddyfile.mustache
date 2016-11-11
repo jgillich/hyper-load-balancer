@@ -1,7 +1,8 @@
 {{#websites}}
 {{{url}}} {
-    proxy /{{#backends}} {{.}}{{/backends}}
-    transparent
-    websocket
+    proxy /{{#backends}} {{.}}{{/backends}} {
+        transparent
+        websocket
+    }
 }
 {{/websites}}
